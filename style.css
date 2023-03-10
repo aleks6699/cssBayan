@@ -18,11 +18,14 @@ label {
   font-size: 1.5rem;
   width: 100%;
   display: block;
+  cursor: pointer;
+  color:rgb(111, 46, 5);
 }
 .anime__title{
     text-transform: uppercase;
     font-size: 3em;
     line-height: 0;
+    color: #16055a;
 }
 .anime {
   display: flex;
@@ -35,7 +38,13 @@ label {
 }
 .anime:hover .plus{
     opacity: 1;
-
+}
+.anime-item:hover .anime-img{
+    margin: 0 auto;
+    transform: scale(1);
+}
+.anime-item:hover label>.plus{
+   transform: rotate(45deg);
 }
 
 .anime__input {
@@ -50,6 +59,7 @@ label {
   width: 50rem;
   cursor: pointer;
   border-top: 2px solid #00BDA7;
+  margin-top: 0.5rem;
 }
 
 .plus {
@@ -58,6 +68,7 @@ label {
   margin-right: 0;
   display: block;
   opacity: 0;
+  cursor: pointer;
 }
 
 .anime-img {
