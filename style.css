@@ -23,9 +23,18 @@ img {
   width: 0;
   height: 0;
 }
+.anime-item{
+    overflow: hidden;
+    width: 30rem;
+  
+}
+
 .anime-img {
-  display: none;
+    margin-left: 2000px;
+    transform: scale(0.6);
+    transition: transform 1s linear;
 }
 .anime__input:checked +.anime-img{
-    display: block;
+   margin-left: auto;
+   transform: scale(1);
 }
