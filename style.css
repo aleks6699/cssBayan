@@ -19,6 +19,7 @@ label {
   display: block;
   cursor: pointer;
   color: #6c0449;
+  transition: all 1s linear;
 }
 .anime__title {
   text-transform: uppercase;
@@ -63,6 +64,7 @@ label {
 
 
 
+
 .plus {
   transition: all 0.5s linear;
   margin-left: auto;
@@ -70,6 +72,10 @@ label {
   display: block;
   opacity: 0;
   cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+  fill:#16055a;
+
 }
 
 .anime-img {
@@ -92,8 +98,11 @@ label {
     color: #6c0449
 }
 
-  .anime-item:active>label {
+.anime-item:active>label {
     color: rgb(244, 128, 13);
+}
+.anime-item:active > label .plus  {
+  fill:rgb(215, 30, 30);
 }
 
 @media screen and (max-width: 900px) {
