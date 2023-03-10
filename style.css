@@ -1,9 +1,8 @@
 html {
-  font-size: 16px;
   box-sizing: border-box;
 }
-body{
-    background: linear-gradient(90deg, #f598a8, #f6edb2);
+body {
+  background: linear-gradient(90deg, #f598a8, #f6edb2);
 }
 
 * {
@@ -19,13 +18,13 @@ label {
   width: 100%;
   display: block;
   cursor: pointer;
-  color:rgb(111, 46, 5);
+  color: #6c0449;
 }
-.anime__title{
-    text-transform: uppercase;
-    font-size: 3em;
-    line-height: 0;
-    color: #16055a;
+.anime__title {
+  text-transform: uppercase;
+  font-size: 3em;
+  line-height: 0;
+  color: #16055a;
 }
 .anime {
   display: flex;
@@ -34,18 +33,18 @@ label {
   justify-content: center;
   width: 50rem;
   margin: 0 auto;
-  
 }
-.anime:hover .plus{
-    opacity: 1;
+.anime:hover .plus {
+  opacity: 1;
 }
-.anime-item:hover .anime-img{
-    margin: 0 auto;
-    transform: scale(1);
+.anime-item:hover .anime-img {
+  margin: 0 auto;
+  transform: scale(1);
 }
-.anime-item:hover label>.plus{
-   transform: rotate(45deg);
+.anime-item:hover label > .plus {
+  transform: rotate(45deg);
 }
+
 
 .anime__input {
   -webkit-appearance: none;
@@ -58,9 +57,11 @@ label {
   margin: 0 auto;
   width: 50rem;
   cursor: pointer;
-  border-top: 2px solid #00BDA7;
+  border-top: 2px solid #00bda7;
   margin-top: 0.5rem;
 }
+
+
 
 .plus {
   transition: all 0.5s linear;
@@ -82,4 +83,26 @@ label {
 }
 .anime__input:checked ~ label > .plus {
   transform: rotate(45deg);
+}
+.anime__input:not(:checked) ~ label {
+    color: rgb(244, 128, 13);
+  }
+
+  .anime:hover label {
+    color: #6c0449
+}
+
+  .anime-item:active>label {
+    color: rgb(244, 128, 13);
+}
+
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 521px) {
+  html {
+    font-size: 6px;
+  }
 }
