@@ -35,17 +35,16 @@ label {
   width: 50rem;
   margin: 0 auto;
 }
-.anime:hover .plus {
+/* .anime:hover .plus {
   opacity: 1;
-}
-.anime-item:hover .anime-img {
+} */
+/* .anime-item:hover .anime-img {
   margin: 0 auto;
   transform: scale(1);
 }
 .anime-item:hover label > .plus {
   transform: rotate(45deg);
-}
-
+} */
 
 .anime__input {
   -webkit-appearance: none;
@@ -62,9 +61,6 @@ label {
   margin-top: 0.5rem;
 }
 
-
-
-
 .plus {
   transition: all 0.5s linear;
   margin-left: auto;
@@ -74,8 +70,7 @@ label {
   cursor: pointer;
   width: 2rem;
   height: 2rem;
-  fill:#16055a;
-
+  fill: #16055a;
 }
 
 .anime-img {
@@ -91,32 +86,44 @@ label {
   transform: rotate(45deg);
 }
 .anime__input:not(:checked) ~ label {
-    color: rgb(244, 128, 13);
-  }
-
-  .anime:hover label {
-    color: #6c0449
+  color: rgb(244, 128, 13);
 }
 
-.anime-item:active>label {
-    color: rgb(244, 128, 13);
+.anime-item:active > label .plus {
+  fill: rgb(215, 30, 30);
 }
-.anime-item:active > label .plus  {
-  fill:rgb(215, 30, 30);
+.anime-item:active > .label {
+  color: rgb(244, 128, 13);
 }
 
 @media screen and (max-width: 1081px) {
   html {
     font-size: 15px;
   }
-@media screen and (max-width: 821px) {
-  html {
-    font-size: 11px;
+  @media screen and (max-width: 821px) {
+    html {
+      font-size: 11px;
+    }
+  }
+  @media screen and (max-width: 569px) {
+    html {
+      font-size: 6px;
+    }
   }
 }
-@media screen and (max-width: 569px) {
-  html {
-    font-size: 6px;
+@media (hover: hover) {
+  .anime:hover .plus {
+    opacity: 1;
   }
-}
+  .anime-item:hover .anime-img {
+    margin: 0 auto;
+    transform: scale(1);
+  }
+  .anime-item:hover label > .plus {
+    transform: rotate(45deg);
+  }
+
+  .anime:hover label {
+    color: #6c0449;
+  }
 }
