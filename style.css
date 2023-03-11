@@ -98,16 +98,16 @@ label {
 
 @media screen and (max-width: 1081px) {
   html {
-    font-size: 15px;
+    font-size: 0.9rem;
   }
   @media screen and (max-width: 821px) {
     html {
-      font-size: 11px;
+      font-size: 0.7rem;
     }
   }
   @media screen and (max-width: 569px) {
     html {
-      font-size: 6px;
+      font-size: 0.5rem;
     }
   }
 }
