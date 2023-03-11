@@ -23,7 +23,7 @@ label {
 }
 .anime__title {
   text-transform: uppercase;
-  font-size: 3em;
+  font-size: 3rem;
   line-height: 0;
   color: #16055a;
 }
@@ -102,12 +102,12 @@ label {
   }
   @media screen and (max-width: 821px) {
     html {
-      font-size: 0.7rem;
+      font-size: 0.6rem;
     }
   }
   @media screen and (max-width: 569px) {
     html {
-      font-size: 0.5rem;
+      font-size: 0.3rem;
     }
   }
 }
