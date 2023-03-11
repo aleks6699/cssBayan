@@ -105,13 +105,18 @@ label {
   fill:rgb(215, 30, 30);
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1081px) {
   html {
-    font-size: 10px;
+    font-size: 15px;
+  }
+@media screen and (max-width: 821px) {
+  html {
+    font-size: 11px;
   }
 }
-@media screen and (max-width: 521px) {
+@media screen and (max-width: 569px) {
   html {
     font-size: 6px;
   }
+}
 }
