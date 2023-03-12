@@ -97,20 +97,41 @@ label {
 }
 
 @media screen and (max-width: 1081px) {
-  html {
-    font-size: 0.9rem;
+  label{
+    font-size: 1.5rem;
   }
-  @media screen and (max-width: 821px) {
-    html {
-      font-size: 0.6rem;
-    }
+  .anime{
+    width:  40rem;
   }
-  @media screen and (max-width: 569px) {
-    html {
-      font-size: 0.3rem;
-    }
+  .anime-item{
+    width: 40rem;
   }
 }
+  @media screen and (max-width: 821px) {
+    label{
+      font-size: 1.3rem;
+    }
+    .anime{
+      width:  30rem;
+    }
+    .anime-item{
+      width: 30rem;
+    }
+   
+  }
+  @media screen and (max-width: 569px) {
+    label{
+      font-size: 1.2rem;
+    }
+    .anime{
+      width:  18rem;
+    }
+    .anime-item{
+      width: 18rem;
+    }
+  
+  }
+
 @media (hover: hover) {
   .anime:hover .plus {
     opacity: 1;
